@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Full Bio - Bode-Okunade Abdulsalam B.</title>
+    <title>Full Bio</title>
     <meta name="description" content="Complete professional biography and career journey">
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -14,12 +14,12 @@
     <nav class="navbar">
         <div class="nav-container">
             <div class="nav-logo">
-                <a href="index.html">Bode-Okunade Abdulsalam B.</a>
+                <a href="index.html" id="nav-logo-name"></a>
             </div>
             <div class="nav-menu" id="nav-menu">
                 <a href="index.html#home" class="nav-link">Home</a>
                 <a href="index.html#about" class="nav-link">About</a>
-                <a href="index.html#experience" class="nav-link">Experience</a>
+                <a href="experience.html" class="nav-link">Experience</a>
                 <a href="index.html#projects" class="nav-link">Projects</a>
                 <a href="index.html#publications" class="nav-link">Publications</a>
                 <a href="index.html#talks" class="nav-link">Talks</a>
@@ -40,8 +40,8 @@
                 <a href="index.html#about" class="back-link">
                     <i class="fas fa-arrow-left"></i> Back to Portfolio
                 </a>
-                <h1 id="bio-title">Complete Professional Journey</h1>
-                <p class="page-subtitle">A detailed look at my career path and experiences</p>
+                <h1 id="bio-title"></h1>
+                <p class="page-subtitle" id="bio-subtitle"></p>
             </div>
 
             <div class="bio-content">
@@ -50,40 +50,12 @@
                 </div>
                 
                 <div class="bio-sidebar">
-                    <div class="quick-facts">
-                        <h3>Quick Facts</h3>
-                        <div class="fact-item">
-                            <strong>Current Position:</strong>
-                            <span id="current-position">Embedded Systems Engineer</span>
-                        </div>
-                        <div class="fact-item">
-                            <strong>Institution:</strong>
-                            <span id="current-institution">Proforce Galaxies</span>
-                        </div>
-                        <div class="fact-item">
-                            <strong>Education:</strong>
-                            <span>B.Eng. Mechatronics Engineering</span>
-                        </div>
-                        <div class="fact-item">
-                            <strong>Specialization:</strong>
-                            <span>Robotics & Embedded Systems</span>
-                        </div>
+                    <div class="quick-facts" id="quick-facts">
+                        <!-- Quick facts will be loaded dynamically -->
                     </div>
 
-                    <div class="contact-card">
-                        <h3>Get in Touch</h3>
-                        <div class="contact-item">
-                            <i class="fas fa-envelope"></i>
-                            <a href="mailto:bodeokunadeab@gmail.com">bodeokunadeab@gmail.com</a>
-                        </div>
-                        <div class="contact-item">
-                            <i class="fab fa-linkedin"></i>
-                            <a href="https://linkedin.com/in/abdulsalam-bode-okunade" target="_blank">LinkedIn</a>
-                        </div>
-                        <div class="contact-item">
-                            <i class="fab fa-github"></i>
-                            <a href="https://github.com/emriys" target="_blank">GitHub</a>
-                        </div>
+                    <div class="contact-card" id="contact-card">
+                        <!-- Contact information will be loaded dynamically -->
                     </div>
                 </div>
             </div>
@@ -93,7 +65,7 @@
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
-            <p>&copy; 2024 Bode-Okunade Abdulsalam B. All rights reserved.</p>
+            <p id="footer-text"></p>
             <p>Built with HTML, CSS, and JavaScript</p>
         </div>
     </footer>

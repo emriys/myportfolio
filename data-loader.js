@@ -758,22 +758,25 @@ class PortfolioDataLoader {
     populateFullBioPage() {
         if (!this.data) return;
 
-        const { personal, about } = this.data;
+        const { personal, about, education, researchInterests, contact, social } = this.data;
 
         // Update page title
         document.title = `Full Bio - ${personal.name}`;
 
         // Navigation logo
-        const navLogo = document.querySelector('.nav-logo a');
+        const navLogo = document.getElementById('nav-logo-name');
         if (navLogo) navLogo.textContent = personal.name;
 
         // Load full bio content
         if (about && about.fullBio) {
             const bioData = about.fullBio;
             
-            // Set title
+            // Set title and subtitle
             const bioTitle = document.getElementById('bio-title');
             if (bioTitle) bioTitle.textContent = bioData.title;
+            
+            const bioSubtitle = document.getElementById('bio-subtitle');
+            if (bioSubtitle) bioSubtitle.textContent = 'A detailed look at my career path and experiences';
             
             // Load sections
             const sectionsContainer = document.getElementById('bio-sections');
@@ -783,8 +786,10 @@ class PortfolioDataLoader {
                     const sectionDiv = document.createElement('div');
                     sectionDiv.className = 'bio-section';
                     
-                    // Handle paragraph breaks in content
-                    const paragraphs = section.content.split('\n\n').map(p => `<p>${p}</p>`).join('');
+                    // Handle paragraph breaks in content (split by \n\n\n\n for major breaks, then \n\n for paragraphs)
+                    const paragraphs = section.content.split('\n\n\n\n').map(majorSection => {
+                        return majorSection.split('\n\n').map(p => `<p>${p.trim()}</p>`).join('');
+                    }).join('');
                     
                     sectionDiv.innerHTML = `
                         <h2>${section.heading}</h2>
@@ -793,40 +798,107 @@ class PortfolioDataLoader {
                     sectionsContainer.appendChild(sectionDiv);
                 });
             }
+        }
 
-            // Update current position info
-            if (about.currentRole) {
-                const currentPosition = document.getElementById('current-position');
-                const currentInstitution = document.getElementById('current-institution');
-                if (currentPosition) currentPosition.textContent = about.currentRole.title;
-                if (currentInstitution) currentInstitution.textContent = about.currentRole.institution;
+        // Populate Quick Facts section
+        const quickFactsContainer = document.getElementById('quick-facts');
+        if (quickFactsContainer) {
+            let quickFactsHTML = '<h3>Quick Facts</h3>';
+            
+            // Current Position
+            if (about && about.currentRole) {
+                quickFactsHTML += `
+                    <div class="fact-item">
+                        <strong>Current Position:</strong>
+                        <span>${about.currentRole.title}</span>
+                    </div>
+                `;
+                
+                // Institution
+                quickFactsHTML += `
+                    <div class="fact-item">
+                        <strong>Institution:</strong>
+                        <span>${about.currentRole.institution}</span>
+                    </div>
+                `;
             }
+            
+            // Education
+            if (education && education.length > 0) {
+                quickFactsHTML += `
+                    <div class="fact-item">
+                        <strong>Education:</strong>
+                        <span>${education[0].degree}</span>
+                    </div>
+                `;
+            }
+            
+            // Specialization from research interests
+            if (researchInterests && researchInterests.length > 0) {
+                const mainInterests = researchInterests.slice(0, 3).join(', ');
+                quickFactsHTML += `
+                    <div class="fact-item">
+                        <strong>Specialization:</strong>
+                        <span>${mainInterests}</span>
+                    </div>
+                `;
+            }
+            
+            quickFactsContainer.innerHTML = quickFactsHTML;
         }
 
-        // Update contact information
-        const { contact, social } = this.data;
-        
-        // Update email
-        const emailLink = document.querySelector('.contact-item a[href^="mailto:"]');
-        if (emailLink && contact) {
-            emailLink.textContent = contact.email;
-            emailLink.href = `mailto:${contact.email}`;
-        }
-
-        // Update social links
-        const linkedinLink = document.querySelector('.contact-item a[href*="linkedin"]');
-        if (linkedinLink && social.linkedin) {
-            linkedinLink.href = social.linkedin;
-        }
-
-        const githubLink = document.querySelector('.contact-item a[href*="github"]');
-        if (githubLink && social.github) {
-            githubLink.href = social.github;
+        // Populate Contact Card section
+        const contactCardContainer = document.getElementById('contact-card');
+        if (contactCardContainer && contact && social) {
+            let contactHTML = '<h3>Get in Touch</h3>';
+            
+            // Email with mailto link
+            if (contact.email) {
+                contactHTML += `
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <a href="mailto:${contact.email}">${contact.email}</a>
+                    </div>
+                `;
+            }
+            
+            // Phone with tel link
+            if (contact.phone) {
+                const phoneClean = contact.phone.replace(/\s/g, '');
+                contactHTML += `
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <a href="tel:${phoneClean}">${contact.phone}</a>
+                    </div>
+                `;
+            }
+            
+            // LinkedIn
+            if (social.linkedin) {
+                contactHTML += `
+                    <div class="contact-item">
+                        <i class="fab fa-linkedin"></i>
+                        <a href="${social.linkedin}" target="_blank">LinkedIn</a>
+                    </div>
+                `;
+            }
+            
+            // GitHub
+            if (social.github) {
+                contactHTML += `
+                    <div class="contact-item">
+                        <i class="fab fa-github"></i>
+                        <a href="${social.github}" target="_blank">GitHub</a>
+                    </div>
+                `;
+            }
+            
+            contactCardContainer.innerHTML = contactHTML;
         }
 
         // Footer
-        const footerName = document.querySelector('.footer p');
-        if (footerName) footerName.innerHTML = `&copy; 2024 ${personal.name}. All rights reserved.`;
+        const footerText = document.getElementById('footer-text');
+        if (footerText) footerText.innerHTML = `&copy; 2024 ${personal.name}. All rights reserved.`;
     }
 
     // Initialize based on current page

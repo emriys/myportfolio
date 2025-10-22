@@ -45,11 +45,11 @@ def main():
     # Change to the directory containing this script
     os.chdir(os.path.dirname(os.path.abspath(__file__)))
     
-    print(f"Portfolio website is running at http://localhost:{PORT}")
-    print("Press Ctrl+C to stop the server")
+    # print(f"Portfolio website is running at http://localhost:{PORT}")
+    # print("Press Ctrl+C to stop the server")
     
     # Open browser after 1 second delay
-    Timer(1, open_browser).start()
+    # Timer(1, open_browser).start()
     
     try:
         app.run(host='0.0.0.0', port=PORT, debug=True, use_reloader=False)

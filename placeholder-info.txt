@@ -1,0 +1,47 @@
+PLACEHOLDER IMAGES NEEDED:
+
+1. Profile Image (images/profile.jpg)
+   - Size: 300x300px (square)
+   - Format: JPG or PNG
+   - Professional headshot photo
+
+2. Project Images (images/project1.jpg, project2.jpg, project3.jpg)
+   - Size: 400x250px (16:10 aspect ratio)
+   - Format: JPG or PNG
+   - Screenshots or diagrams of your projects
+
+3. CV/Resume (files/CV.pdf)
+   - Your current CV in PDF format
+
+CUSTOMIZATION CHECKLIST:
+
+□ Replace "Your Name" with your actual name throughout all files
+□ Update the title, profession, and institution in index.html
+□ Add your education details (degrees, universities, years)
+□ List your research interests
+□ Add your work experience and positions
+□ Update project information with your actual projects
+□ Add your publications with correct details and links
+□ Include your talks and presentations
+□ Update contact information (email, address, phone)
+□ Add your social media and professional profile links
+□ Replace placeholder images with your actual photos
+□ Add your CV file
+
+DEPLOYMENT STEPS:
+
+1. Create a new GitHub repository
+2. Upload all files to the repository
+3. Go to Settings > Pages in your GitHub repository
+4. Select "Deploy from a branch" and choose "main"
+5. Your site will be available at https://yourusername.github.io/repository-name
+
+OPTIONAL ENHANCEMENTS:
+
+□ Add a blog section
+□ Implement dark mode toggle
+□ Add more project details pages
+□ Include a news/updates section
+□ Add Google Analytics tracking
+□ Optimize images for web (WebP format)
+□ Add more interactive animations

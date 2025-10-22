@@ -1,0 +1,398 @@
+{
+  "personal": {
+    "name": "Bode-Okunade Abdulsalam B.",
+    "firstName": "Abdulsalam",
+    "title": "Robotics Engineer",
+    "currentPosition": "Lead Embedded Systems Engineer",
+    "company": "Proforce Galaxies",
+    "companyDescription": "a space and satellite technologies company",
+    "email": "bodeokunadeab@gmail.com",
+    "phone": "+234 810 442 0751",
+    "profileImage": "images/profile.png",
+    "cvFile": "files/CV.pdf"
+  },
+  
+  "bio": {
+    "hero": "I am the Lead Embedded Systems Engineer at Proforce Galaxies, a space and satellite technologies company.",
+    "researchInterests": "My main research interests include autonomous systems, collaborative robots, humanoid and animaloid robots, optimal control systems for robots, embedded systems and IoT, computer vision and artificial intelligence.",
+    "tagline": "Here you can find information about my work, research projects, publications, and contact information."
+  },
+  
+  "about": {
+    "currentRole": {
+      "title": "Your Current Position",
+      "institution": "Your Institution/Department",
+      "institutionUrl": "#",
+      "description": [
+        "Detailed description of your current role and responsibilities. Include information about your research group, lab, or team.",
+        "Brief professional journey and key career highlights. Mention any leadership roles or significant achievements."
+      ]
+    }
+  },
+  
+  "education": [
+    {
+      "degree": "PhD in [Your Field]",
+      "year": "[Year]",
+      "institution": "[University Name]"
+    },
+    {
+      "degree": "Master's in [Your Field]",
+      "year": "[Year]",
+      "institution": "[University Name]"
+    },
+    {
+      "degree": "Bachelor's in [Your Field]",
+      "year": "[Year]",
+      "institution": "[University Name]"
+    }
+  ],
+  
+  "researchInterests": [
+    "Research Area 1",
+    "Research Area 2",
+    "Research Area 3",
+    "Research Area 4",
+    "Research Area 5"
+  ],
+  
+  "experience": [
+    {
+      "period": "2021 - Present",
+      "title": "Current Position Title",
+      "institution": "Institution Name",
+      "institutionUrl": "#",
+      "description": "Description of your current role and key responsibilities."
+    },
+    {
+      "period": "2018 - 2021",
+      "title": "Previous Position Title",
+      "institution": "Institution Name",
+      "institutionUrl": "#",
+      "description": "Description of your previous role and achievements."
+    },
+    {
+      "period": "2015 - 2018",
+      "title": "Earlier Position Title",
+      "institution": "Institution Name",
+      "institutionUrl": "#",
+      "description": "Description of your earlier role and contributions."
+    }
+  ],
+  
+  "projects": [
+    {
+      "title": "Project Title 1",
+      "url": "#",
+      "image": "images/project1.jpg",
+      "description": "Brief description of the project, its objectives, and key outcomes.",
+      "tags": ["Tag1", "Tag2"]
+    },
+    {
+      "title": "Project Title 2",
+      "url": "#",
+      "image": "images/project2.jpg",
+      "description": "Brief description of the project, its objectives, and key outcomes.",
+      "tags": ["Tag1", "Tag2"]
+    },
+    {
+      "title": "Project Title 3",
+      "url": "#",
+      "image": "images/project3.jpg",
+      "description": "Brief description of the project, its objectives, and key outcomes.",
+      "tags": ["Tag1", "Tag2"]
+    }
+  ],
+  
+  "publications": {
+    "recent": [
+      {
+        "authors": [
+          {"name": "Your Name", "url": "#"},
+          {"name": "Co-Author 1", "url": "#"},
+          {"name": "Co-Author 2", "url": "#"}
+        ],
+        "title": "Publication Title 1",
+        "url": "#",
+        "venue": "Conference/Journal Name, Year",
+        "links": [
+          {"type": "PDF", "url": "#"},
+          {"type": "DOI", "url": "#"}
+        ]
+      },
+      {
+        "authors": [
+          {"name": "Your Name", "url": "#"},
+          {"name": "Co-Author 1", "url": "#"}
+        ],
+        "title": "Publication Title 2",
+        "url": "#",
+        "venue": "Conference/Journal Name, Year",
+        "links": [
+          {"type": "PDF", "url": "#"},
+          {"type": "DOI", "url": "#"}
+        ]
+      },
+      {
+        "authors": [
+          {"name": "Your Name", "url": "#"},
+          {"name": "Co-Author 1", "url": "#"},
+          {"name": "Co-Author 2", "url": "#"},
+          {"name": "Co-Author 3", "url": "#"}
+        ],
+        "title": "Publication Title 3",
+        "url": "#",
+        "venue": "Conference/Journal Name, Year",
+        "links": [
+          {"type": "PDF", "url": "#"},
+          {"type": "DOI", "url": "#"}
+        ]
+      }
+    ],
+    "byYear": {
+      "2024": [
+        {
+          "authors": [
+            {"name": "Your Name", "url": "#"},
+            {"name": "Co-Author 1", "url": "#"},
+            {"name": "Co-Author 2", "url": "#"}
+          ],
+          "title": "Title of Your Recent Publication",
+          "url": "#",
+          "venue": "Conference/Journal Name 2024",
+          "abstract": "Brief abstract or description of the publication. This should summarize the key contributions and findings of your research work.",
+          "links": [
+            {"type": "PDF", "url": "#", "icon": "fas fa-file-pdf"},
+            {"type": "DOI", "url": "#", "icon": "fas fa-external-link-alt"},
+            {"type": "Code", "url": "#", "icon": "fab fa-github"}
+          ]
+        },
+        {
+          "authors": [
+            {"name": "Co-Author 1", "url": "#"},
+            {"name": "Your Name", "url": "#"},
+            {"name": "Co-Author 2", "url": "#"}
+          ],
+          "title": "Another Publication Title",
+          "url": "#",
+          "venue": "Journal Name, Vol. X, No. Y, 2024",
+          "abstract": "Abstract for the second publication. Describe the methodology, results, and impact of this research work.",
+          "links": [
+            {"type": "PDF", "url": "#", "icon": "fas fa-file-pdf"},
+            {"type": "DOI", "url": "#", "icon": "fas fa-external-link-alt"}
+          ]
+        }
+      ],
+      "2023": [
+        {
+          "authors": [
+            {"name": "Your Name", "url": "#"},
+            {"name": "Co-Author 1", "url": "#"}
+          ],
+          "title": "2023 Publication Title",
+          "url": "#",
+          "venue": "Conference Name 2023",
+          "abstract": "Description of your 2023 research work and its contributions to the field.",
+          "links": [
+            {"type": "PDF", "url": "#", "icon": "fas fa-file-pdf"},
+            {"type": "DOI", "url": "#", "icon": "fas fa-external-link-alt"},
+            {"type": "Video", "url": "#", "icon": "fas fa-video"}
+          ]
+        },
+        {
+          "authors": [
+            {"name": "Your Name", "url": "#"},
+            {"name": "Co-Author 1", "url": "#"},
+            {"name": "Co-Author 2", "url": "#"},
+            {"name": "Co-Author 3", "url": "#"}
+          ],
+          "title": "Collaborative Research Publication",
+          "url": "#",
+          "venue": "Journal of Research, 2023",
+          "abstract": "Abstract for collaborative research work with multiple authors and institutions.",
+          "links": [
+            {"type": "PDF", "url": "#", "icon": "fas fa-file-pdf"},
+            {"type": "DOI", "url": "#", "icon": "fas fa-external-link-alt"}
+          ]
+        }
+      ],
+      "2022": [
+        {
+          "authors": [
+            {"name": "Your Name", "url": "#"}
+          ],
+          "title": "Single Author Publication",
+          "url": "#",
+          "venue": "Workshop on Research Topics, 2022",
+          "abstract": "Description of your individual research contribution and findings.",
+          "links": [
+            {"type": "PDF", "url": "#", "icon": "fas fa-file-pdf"},
+            {"type": "DOI", "url": "#", "icon": "fas fa-external-link-alt"}
+          ]
+        }
+      ]
+    },
+    "preprints": [
+      {
+        "authors": [
+          {"name": "Your Name", "url": "#"},
+          {"name": "Co-Author 1", "url": "#"}
+        ],
+        "title": "Preprint Title",
+        "url": "#",
+        "venue": "arXiv preprint, 2024",
+        "status": "Under review at Journal Name",
+        "abstract": "Abstract for work that is currently under review or available as a preprint.",
+        "links": [
+          {"type": "arXiv", "url": "#", "icon": "fas fa-file-pdf"},
+          {"type": "Code", "url": "#", "icon": "fab fa-github"}
+        ]
+      }
+    ],
+    "stats": {
+      "total": 25,
+      "citations": 450,
+      "hIndex": 12,
+      "journalPapers": 8
+    }
+  },
+  
+  "talks": {
+    "recent": [
+      {
+        "title": "Talk Title 1",
+        "url": "#",
+        "venue": "Conference/Event Name",
+        "date": "Date, Year",
+        "location": "Location",
+        "description": "Brief description of the talk content and key points covered."
+      },
+      {
+        "title": "Talk Title 2",
+        "url": "#",
+        "venue": "Conference/Event Name",
+        "date": "Date, Year",
+        "location": "Location",
+        "description": "Brief description of the talk content and key points covered."
+      }
+    ],
+    "upcoming": [
+      {
+        "title": "Future Conference Presentation",
+        "url": "#",
+        "venue": "International Conference on Your Field",
+        "date": "March 2025",
+        "location": "City, Country",
+        "type": "Oral Presentation",
+        "abstract": "Abstract or description of your upcoming presentation. Include key topics and expected outcomes.",
+        "status": "Accepted - Presentation Scheduled"
+      }
+    ],
+    "byYear": {
+      "2024": [
+        {
+          "title": "Recent Research Presentation",
+          "url": "#",
+          "venue": "Workshop on Advanced Topics",
+          "date": "September 2024",
+          "location": "University Name",
+          "type": "Invited Talk",
+          "abstract": "Description of your recent presentation covering your latest research findings and methodologies.",
+          "links": [
+            {"type": "Slides", "url": "#", "icon": "fas fa-file-pdf"},
+            {"type": "Recording", "url": "#", "icon": "fas fa-video"},
+            {"type": "Event Page", "url": "#", "icon": "fas fa-external-link-alt"}
+          ]
+        },
+        {
+          "title": "Conference Keynote",
+          "url": "#",
+          "venue": "Annual Research Symposium",
+          "date": "June 2024",
+          "location": "Conference Center, City",
+          "type": "Keynote",
+          "abstract": "Keynote presentation on the future directions of your research field and emerging trends.",
+          "links": [
+            {"type": "Slides", "url": "#", "icon": "fas fa-file-pdf"},
+            {"type": "Recording", "url": "#", "icon": "fas fa-video"}
+          ]
+        }
+      ],
+      "2023": [
+        {
+          "title": "Research Collaboration Presentation",
+          "url": "#",
+          "venue": "Industry-Academia Partnership Summit",
+          "date": "November 2023",
+          "location": "Virtual Event",
+          "type": "Panel Discussion",
+          "abstract": "Panel discussion on bridging the gap between academic research and industry applications.",
+          "links": [
+            {"type": "Recording", "url": "#", "icon": "fas fa-video"}
+          ]
+        },
+        {
+          "title": "Graduate Student Workshop",
+          "url": "#",
+          "venue": "University Graduate School",
+          "date": "August 2023",
+          "location": "Campus Auditorium",
+          "type": "Workshop",
+          "abstract": "Workshop for graduate students on research methodologies and career development in academia.",
+          "links": [
+            {"type": "Materials", "url": "#", "icon": "fas fa-file-pdf"}
+          ]
+        }
+      ],
+      "2022": [
+        {
+          "title": "International Conference Presentation",
+          "url": "#",
+          "venue": "Global Research Conference",
+          "date": "October 2022",
+          "location": "International Convention Center",
+          "type": "Oral Presentation",
+          "abstract": "Presentation of research findings at a major international conference in your field.",
+          "links": [
+            {"type": "Slides", "url": "#", "icon": "fas fa-file-pdf"},
+            {"type": "Conference", "url": "#", "icon": "fas fa-external-link-alt"}
+          ]
+        }
+      ]
+    },
+    "stats": {
+      "total": 15,
+      "invited": 8,
+      "keynotes": 5,
+      "countries": 12
+    },
+    "topics": [
+      "Research Methodology",
+      "Your Field Topic 1",
+      "Your Field Topic 2",
+      "Industry Applications",
+      "Future Trends",
+      "Career Development"
+    ]
+  },
+  
+  "contact": {
+    "email": "bodeokunadeab@gmail.com",
+    "phone": "+234 810 442 0751",
+    "address": {
+      "institution": "Your Institution",
+      "department": "Department Name",
+      "location": "City, State/Province, Country"
+    }
+  },
+  
+  "social": {
+    "linkedin": "#",
+    "twitter": "#",
+    "github": "#",
+    "orcid": "#",
+    "googleScholar": "#",
+    "researchGate": "#",
+    "mendeley": "#"
+  }
+}

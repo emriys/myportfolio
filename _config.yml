@@ -1,0 +1,55 @@
+# GitHub Pages Configuration
+title: Your Name - Personal Portfolio
+description: Personal portfolio and academic website
+url: "https://yourusername.github.io"
+baseurl: "/repository-name"
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+permalink: pretty
+
+# Exclude files from processing
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor
+
+# Include files
+include:
+  - _pages
+
+# Collections
+collections:
+  publications:
+    output: true
+    permalink: /:collection/:name/
+
+# Defaults
+defaults:
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "default"
+  - scope:
+      path: ""
+      type: "publications"
+    values:
+      layout: "publication"
+
+# SEO settings
+plugins:
+  - jekyll-sitemap
+  - jekyll-feed
+  - jekyll-seo-tag
+
+# Social media
+social:
+  name: Your Name
+  links:
+    - https://twitter.com/yourusername
+    - https://linkedin.com/in/yourusername
+    - https://github.com/yourusername

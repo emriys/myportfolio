@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Experience Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Testing Experience Data Loading</h1>
+        <div id="experience-content">
+            <!-- This should be populated by data-loader.js -->
+        </div>
+    </div>
+
+    <script>
+        // Simple test to check if data loads
+        fetch('portfolio-data2.json')
+            .then(response => response.json())
+            .then(data => {
+                console.log('Data loaded successfully:', data.experience);
+                document.getElementById('experience-content').innerHTML = '<p>Data loaded! Check console for details.</p>';
+            })
+            .catch(error => {
+                console.error('Error loading data:', error);
+                document.getElementById('experience-content').innerHTML = '<p>Error loading data. Check console.</p>';
+            });
+    </script>
+    <script src="data-loader.js"></script>
+</body>
+</html>

@@ -11,7 +11,7 @@ class PortfolioDataLoader {
 
     async loadData() {
         try {
-            const response = await fetch('portfolio-data2.json');
+            const response = await fetch('portfolio-data.json');
             this.data = await response.json();
             portfolioData = this.data; // Make data globally available
             return this.data;
